@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* --------header part--------------- */
+/* .app {
+  position: relative;
+} */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0px 0 20px;
+  position: sticky;
+  top: 0;
+  /* width: 100%; */
+  top: 0;
+  z-index: 100;
+  background-color: #ffffff;
+}
+.header-logo {
+  object-fit: contain;
+  width: 100px;
+  height: 80px;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.header-center {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  width: 40%;
+}
+
+.header-center .header-input {
+  flex: 1;
+  border: none !important;
+  outline: none;
+}
+.header-center .header-input-button {
+  width: 40px;
+  background-color: #fafafa;
+  color: gray;
+  border: 1px solid lightgray;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+.header-icon {
+  margin-right: 8px;
+}
+/* --header part finish------- */
+/* ---app css part------ */
+.app-page {
+  display: flex;
+}
+
+/* ----------slidbar----- */
+/* .app-page {
+  position: relative;
+} */
+.sidebar {
+  flex: 0.2 !important;
+
+  /* position: fixed; */
+}
+
+.sidebar > hr {
+  height: 1px;
+  border: 0;
+  background-color: lightgray;
+  margin: 10px 0;
+}
+
+/* ------recommended----- */
+.recommended {
+  flex: 0.8;
+
+  /* border: 1px solid black; */
+  background-color: #f9f9f9;
+  padding: 10px 20px 0 20px;
+}
+.recommended > h2 {
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+.recommended-videos {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* ---------videocard--- */
+.videocard {
+  width: 260px;
+  margin-bottom: 30px;
+}
+.videocard-thumbnail {
+  height: 140px;
+  width: 245px;
+}
+.videocard-info {
+  display: flex;
+  margin-top: 0px;
+  padding-right: 15px;
+}
+.videocard-text {
+  margin-left: 15px;
+}
+.videocard-text > h4 {
+  font-size: 14px;
+  /* margin-bottom: 5px; */
+  margin-top: 5px;
+}
+.videocard-text > p {
+  font-size: 14px;
+  margin: 0px;
+  color: gray;
+}
+.videocard-avatar {
+  margin-top: 9px;
+  height: 30px !important;
+  width: 30px !important;
+}
+/* -----sidebaricon----- */
+.sidebaricon {
+  display: flex;
+  align-items: center;
+  padding: 5px 30px;
+}
+.sidebaricon-icon {
+  color: #606060;
+  font-size: larger !important;
+}
+.sidebaricon-title {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 0px;
+}
+.sidebaricon:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+.sidebaricon:hover > .sidebaricon-icon {
+  color: red;
+}
+.sidebaricon:hover > .sidebaricon-title {
+  font-weight: bold;
+}
+.sidebaricon.selected {
+  background-color: lightgray;
+}
+.sidebaricon.selected .sidebaricon-icon {
+  color: red;
+}
+.sidebaricon.selected .sidebaricon-title {
+  font-weight: bold;
+}
